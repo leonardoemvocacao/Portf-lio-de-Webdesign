@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesquisa cultural</title>
+</head>
+<body>
+     <h1>vozes da quebrada</h1> 
+     <p>mapeando a cultura,os gostos e a indentidade dos jovens da periferia de SP</p>
+     
+     </p>
+     <body><a href="index.html">🏚 inicio/textos</a> |
+        <a href="cultura.html">🎵 musicas e culinária</a> |
+        <a href="estilo.html">👕 moda e esportes</a>
+        <p></p>
+        <hr>
+        <div></div>
+          <h2>introdução e formatação de texto </h2>
+          <p>esta plataforma foi criada para da voz aos jovens das periferias de são paulo. Aqui 
+            vamos estudar como a tecnologia pode nos ajudar a documentar a documentar nossa propria realidade.
+          </p>  
+            <div></div>
+            <hr>
+            <div></div>
+            <h3>conceitos importantes </h3>
+
+            <p>o funk e o rap não são apenas ritimos, eles representam a, <b>industria, cultural </b>das nossas comunidades.</p>
+
+            <p>é ><strong>fundamental </strong>entender que a periferia é um polo de produção de 
+            produção de conteúdo e arte, não apenas de consumo.</p>
+
+            <p>muitas expressões que nasceram nas ruas de SP, hoje são usadas em <i>campanhas publicitárias globais</i></p>
+
+            <p>precisamos<em> valorizar as iniciativas locais</em> como os saraus, slams e batalhas de rimas.</p>
+
+
+            <p>fique atento: as pesquisam mostram que <mark>mais de 80% dos jovens</mark></p>
+            consideram a musica sua principal companhia no busão
+
+            <p>formula quimica da energia pos- treino:</p>
+            H<sub>2</sub> (água)+ Glicose<sup>lanche</sup>
+            </p>
+        </div>
+        <hr>
+        <p>aula de HTML para Quebrada</p>     
+</body>
+</html>Modulo_04
