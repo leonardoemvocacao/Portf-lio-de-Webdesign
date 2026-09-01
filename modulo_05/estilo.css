@@ -1,0 +1,134 @@
+/* =========================
+   PALETA DE CORES
+   ========================= */
+
+:root {
+    --cor-principal: #6c63ff;
+    --cor-secundaria: #1f2937;
+    --cor-destaque: #22c55e;
+    --cor-fundo: #f3f4f6;
+    --cor-texto: #111827;
+    --cor-branca: #ffffff;
+}
+
+
+/* =========================
+   ESTILO GERAL
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+
+    padding: 30px;
+    text-align: center;
+
+    border-bottom: 5px solid var(--cor-destaque);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   MODELO BOX
+   ========================= */
+
+.card {
+    background-color: var(--cor-branca);
+
+    /* Espaçamento interno */
+    padding: 30px;
+
+    /* Borda */
+    border: 2px solid var(--cor-principal);
+    border-radius: 15px;
+
+    /* Margem */
+    margin-bottom: 30px;
+
+    /* Sombra */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BOTÃO
+   ========================= */
+
+button {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+button:hover {
+    background-color: var(--cor-destaque);
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   RODAPÉ
+   ========================= */
+
+footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+
+    text-align: center;
+    padding: 20px;
+
+    margin-top: 40px;
+}
