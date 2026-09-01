@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto JavaScript</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #222;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #4f46e5;
+            margin-bottom: 20px;
+        }
+
+        #mensagem {
+            font-size: 20px;
+            margin: 25px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4f46e5;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #3730a3;
+            transform: scale(1.05);
+        }
+
+        .escuro {
+            background-color: #111827;
+            color: white;
+        }
+
+        .escuro .container {
+            background-color: #1f2937;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Minha Página Interativa</h1>
+
+        <p id="mensagem">
+            Clique em um botão para interagir com a página!
+        </p>
+
+        <div class="botoes">
+
+            <button id="botaoMensagem">
+                Alterar mensagem
+            </button>
+
+            <button id="botaoCor">
+                Mudar cor
+            </button>
+
+            <button id="botaoTema">
+                Mudar tema
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // Selecionando os elementos da página
+        const mensagem = document.getElementById("mensagem");
+        const botaoMensagem = document.getElementById("botaoMensagem");
+        const botaoCor = document.getElementById("botaoCor");
+        const botaoTema = document.getElementById("botaoTema");
+
+
+        // Evento de CLICK para alterar o texto
+        botaoMensagem.addEventListener("click", function() {
+
+            mensagem.textContent =
+                "Você clicou no botão! O JavaScript está funcionando.";
+
+        });
+
+
+        // Evento de CLICK para alterar a cor do texto
+        botaoCor.addEventListener("click", function() {
+
+            mensagem.style.color = "#ef4444";
+
+        });
+
+
+        // Evento de CLICK para mudar o tema da página
+        botaoTema.addEventListener("click", function() {
+
+            document.body.classList.toggle("escuro");
+
+        });
+
+    </script>
+
+</body>
+</html>
