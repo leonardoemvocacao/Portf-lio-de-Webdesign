@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto DOM - JavaScript</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #222;
+            transition: 0.3s;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #4f46e5;
+            margin-bottom: 20px;
+        }
+
+        #mensagem {
+            font-size: 20px;
+            margin: 25px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4f46e5;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #3730a3;
+            transform: scale(1.05);
+        }
+
+        .escuro {
+            background-color: #111827;
+            color: white;
+        }
+
+        .escuro .container {
+            background-color: #1f2937;
+        }
+
+        .destaque {
+            color: #22c55e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="titulo">Projeto DOM</h1>
+
+        <p id="mensagem">
+            Clique nos botões para interagir com a página.
+        </p>
+
+        <div class="botoes">
+
+            <button id="btnMensagem">
+                Alterar mensagem
+            </button>
+
+            <button id="btnEstilo">
+                Alterar estilo
+            </button>
+
+            <button id="btnElemento">
+                Criar elemento
+            </button>
+
+            <button id="btnTema">
+                Mudar tema
+            </button>
+
+        </div>
+
+        <div id="resultado"></div>
+
+    </div>
+
+
+    <script>
+
+        // =====================================
+        // SELEÇÃO DOS ELEMENTOS
+        // =====================================
+
+        const titulo = document.getElementById("titulo");
+        const mensagem = document.getElementById("mensagem");
+        const resultado = document.getElementById("resultado");
+
+        const btnMensagem = document.getElementById("btnMensagem");
+        const btnEstilo = document.getElementById("btnEstilo");
+        const btnElemento = document.getElementById("btnElemento");
+        const btnTema = document.getElementById("btnTema");
+
+
+        // Exemplo usando querySelector
+        const container = document.querySelector(".container");
+
+
+        // =====================================
+        // FUNÇÃO PARA ALTERAR A MENSAGEM
+        // =====================================
+
+        function alterarMensagem() {
+
+            mensagem.textContent =
+                "A mensagem foi alterada usando o DOM!";
+
+        }
+
+
+        // =====================================
+        // FUNÇÃO PARA ALTERAR O ESTILO
+        // =====================================
+
+        function alterarEstilo() {
+
+            mensagem.classList.toggle("destaque");
+
+        }
+
+
+        // =====================================
+        // FUNÇÃO PARA CRIAR UM NOVO ELEMENTO
+        // =====================================
+
+        function criarElemento() {
+
+            const novoTexto = document.createElement("p");
+
+            novoTexto.textContent =
+                "Novo elemento criado pelo JavaScript!";
+
+            resultado.appendChild(novoTexto);
+
+        }
+
+
+        // =====================================
+        // FUNÇÃO PARA MUDAR O TEMA
+        // =====================================
+
+        function mudarTema() {
+
+            document.body.classList.toggle("escuro");
+
+        }
+
+
+        // =====================================
+        // EVENTOS DE CLIQUE
+        // =====================================
+
+        btnMensagem.addEventListener("click", alterarMensagem);
+
+        btnEstilo.addEventListener("click", alterarEstilo);
+
+        btnElemento.addEventListener("click", criarElemento);
+
+        btnTema.addEventListener("click", mudarTema);
+
+    </script>
+
+</body>
+</html>
